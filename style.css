@@ -1,0 +1,154 @@
+
+*{
+  position: relative;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header{
+      display: flex;
+      justify-content: space-between;
+      background-color: rgb(234, 236, 238);
+      align-items: center;
+      padding: 15px;
+      border-bottom: 1px solid #0100;
+      box-shadow: 0 4px 4px -2px gray;
+      
+}
+.connexion button{
+      width: 70px;
+      height: 40px;
+      border: none;
+      background: #fff;
+      border-radius: 10px;
+      margin: 10px;
+      cursor: pointer;
+}
+input{
+      border: none;
+      background-color: #fff;
+      border-radius: 5px;
+      height: 30px;
+      padding: 0 15px;
+}
+.logo{
+      color: green;
+      cursor: pointer;
+      
+}
+.navigation ul{
+      display: flex;
+      gap: 10px;
+}
+ul li{
+      list-style: none;
+      margin-left: 20px;
+}
+li a{
+      color: rgb(108,108,108);
+      text-decoration: none;
+      font-weight: bold;
+}
+li a:hover{
+      color: green;
+}
+li a::after{
+      content: "";
+      display: block;
+      width: 0;
+      background:  green;
+      height: 1px;
+      margin: 0 auto;
+      transition: width 0.2s ease-in-out;
+}
+li a:hover::after{
+      width: 100%;
+      color: green;
+}
+li a:active{
+      background: goldenrod;
+      padding: 10px;
+}
+img{
+  width: 250px;
+  height: auto;
+  background: #fff;
+  margin: 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+.global{
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+  flex-wrap: wrap;
+  background-color: rgb(234, 236, 238);
+  padding: 10px;
+}
+.produit{
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-transform:uppercase;
+
+}
+.but{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+      
+
+button{
+   width: 60px; 
+  height: 50px; 
+  border: 1px solid;
+  border: none;
+  background: #fff;
+  border-radius: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+
+}
+.total{
+      text-align: center;
+      width: 100%;
+      font-size: 2rem;
+      color: green;
+      text-transform: uppercase;
+}
+button:hover{
+  background-color: rgb(221, 221, 221);
+}
+button:hover.active{
+  background-color: red;
+}
+.total{
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.description {
+      margin: 15px;
+      color: rgb(108,108,108);
+}
+ .description h3{
+      text-decoration: underline;
+}
+.description p{
+      color: green;
+      font-size: 1rem;
+      font-weight: bold;
+}
+#like{
+  cursor: pointer;
+}
+.liked{
+  background-color: red;
+}
